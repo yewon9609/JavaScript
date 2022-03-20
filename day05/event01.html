@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭 이벤트</title>
+    
+</head>
+<body>
+    <h3>CSS스타일 동적 변경</h3>
+    <hr>
+    <p>
+        나비가 <span>어쨌든 날고 있어요.</span>
+    </p>
+    <input type="button" value="스타일 변경">
+</body>
+<script>
+   const span= document.getElementsByTagName("span")[0];
+   const input=document.querySelector("input[type='button']");
+    //addEventListener(핸들러의 이름, 핸들러 실행시 전달할 함수)
+    //해당 이벤트 발생시 뒤에 전달한 함수를 실행시켜주는 메소드 
+    input.addEventListener('click', function(){
+        this.style.background="yellow";
+        span.style.fontSize="30px";
+        span.style.border="3px dotted magenta";
+        span.style.width="10vw";    //vw: max-width, min-width
+        span.style.display="inline-block";
+    });
+
+
+
+
+
+
+
+    // input.onclick=function(){
+    //     this.style.background="yellow";
+    //     span.style.fontSize="30px";
+    //     span.style.border="3px dotted magenta";
+    //     span.style.width="10vw";    //vw: max-width, min-width
+    //     span.style.display="inline-block";
+    // };
+
+
+
+
+
+
+
+
+
+</script>
+</html>
