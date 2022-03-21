@@ -1,0 +1,25 @@
+table, td{
+    border: 1px solid black;
+    text-align: center;
+    
+}
+table{
+    width:30%;
+    margin:0 auto;
+}
+#input{
+    border-color:rgb(0, 0,0,0.144);
+}
+section{
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+thead{
+    background-color: #fff9c4;
+}
+#button{
+    cursor: pointer;
+}
+
+
