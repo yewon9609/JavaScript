@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트 이동</title>
+</head>
+<body>
+    <!-- 보통 action : url 또는 경로, 데이터 전송을 위해서는 button태그가 아니라 submit을 써야한다.-->
+    <!-- 버튼 태그의 default값은 submit이다. (타입을 정해주지 않은경우) -->
+    <form action="" name="myForm">
+        <div>
+            <label>
+                네이버
+                <input type="radio" name="site" value="naver">
+            </label>
+        </div>
+        <div>
+            <label>
+                다음
+                <input type="radio" name="site" value="daum">
+            </label>
+        </div>
+        <div>
+            <label>
+                구글
+                <input type="radio" name="site" value="google">
+            </label>
+        </div>
+        <div>
+            <input type="button" value="이동" onclick="send()">
+        </div>
+
+    </form>
+</body>
+<script>
+    // console.log(myForm.site.value);
+    function send(){
+        var url="";
+        if(!myForm.site.value){
+            alert("선택해주세요")
+            location.reload();      //새로고침
+        }
+       switch(myForm.site.value){
+           case 'naver':
+               url="https://www.naver.com"
+               break;
+           case 'daum':
+                url="https://www.daum.net"
+               break;
+           case 'google':
+                url="https://www.google.com"
+               break;
+
+       }
+       location.href=url;
+    }
+</script>
+</html>

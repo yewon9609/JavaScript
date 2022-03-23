@@ -1,0 +1,58 @@
+body{
+    font-family: 'NanumDaHaengCe';
+}
+div.total{
+    margin:0 auto;
+    text-align: center;
+}
+h1{
+    color: rgb(0, 162, 255);
+}
+h1 span{
+    color:green;
+}
+div p{
+    font-weight: bold;
+    font-size: 25px;
+}
+img{
+    border: 3px solid green;
+}
+#inputPW{
+    border: none;
+    border-bottom: 2px solid green;
+    width: 400px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:10px
+    
+}
+input[type="text"]{
+    font-family: 'NanumDaHaengCe';
+    font-size:25px;
+}
+input:focus {outline:none;}
+
+input[type="button"]{
+    font-family: 'NanumDaHaengCe';
+    width:150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(0, 162, 255);
+    color:blue;
+    border:none;
+    cursor: pointer;
+}
+img{
+    width:440px;
+    height: 260px;
+}
+
+
+
+
+
+
+
+
